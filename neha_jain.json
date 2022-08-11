@@ -1,0 +1,194 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "6a3d8657-f999-4850-8733-b6dccd67d44f",
+        "name": "JPDB"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Service",
+            "id": "919676a9-e2a9-4143-b37e-b98ce33939f7",
+            "name": "CRUD"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90937534|-31949292038556807|90942964\",\n    \"dbName\": \"Employee\",\n    \"cmd\": \"GET\",\n    \"rel\": \"Emp-Rel\",\n    \"createTime\": true,\n    \"updateTime\": true,\n    \"jsonStr\": {\n        \"mobileno\": \"9351615065\"\n    }\n\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "Base url : http"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/irl"
+                },
+                "id": "6743b70c-8690-4155-a00f-b5744613ff30",
+                "name": "GET",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90937534|-31949292038556807|90942964\",\n    \"cmd\": \"PUT\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-Rel\",\n    \"jsonStr\": {\n        \"name\": \"NehaJain\",\n        \"email\": \"soniya@gmail.com\",\n        \"mobileno\": \"9351615065\"\n    }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "Base url : http"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "29d32d9c-d578-4430-9882-d961eb692641",
+                "name": "PUT",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90937075|-31948812362179105|90938333\",\n    \"cmd\": \"UPDATE\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-Rel\"\n    \"jsonStr\": {\n       \"1\":{\n  \"name\":\"NehaJain\"} ,\n       \"2\":{\n  \"email\":\"soniya@gmail.com\"}\n        \n   }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "Base url : http"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/irl"
+                },
+                "id": "18b60720-910e-4edd-960d-cf3670440ffb",
+                "name": "REMOVE",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90937534|-31949292038556807|90942964\",\n    \"cmd\": \"UPDATE\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-Rel\"\n    \"jsonStr\": {\n  \"2\":{\"name\":\"NehaJain\"},\n\"1\":{\"city\":\"Jaipur\"}\n        \n   }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "Base url : http"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "780e934c-750d-4402-a808-636d52034c31",
+                "name": "UPDATE",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "environments": [
+    {
+      "id": "87c8346b-1ef1-40c6-a98a-0c51d96c783b",
+      "name": "NehaJain",
+      "variables": {
+        "e10c6ca6-2e71-4036-bbd6-06bd1622883b": {
+          "createdAt": "2022-08-11T22:39:54.148+05:30",
+          "name": "",
+          "value": "",
+          "enabled": true,
+          "private": false
+        }
+      }
+    }
+  ]
+}
